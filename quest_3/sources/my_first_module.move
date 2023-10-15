@@ -26,11 +26,8 @@ module quest_3::my_module {
 
     assert!(book.owner_name == string::utf8(b"richauto"), 0);
     assert!(book.num_pages == 150, 1);
-     
 
     let dummy_address = @0xCAFE;
     transfer::transfer(book, dummy_address);
   }
-  
-
 }
